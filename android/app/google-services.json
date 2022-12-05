@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "594844793507",
+    "project_id": "rttv-af0f2",
+    "storage_bucket": "rttv-af0f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594844793507:android:94e35fa024ae83b0cedd16",
+        "android_client_info": {
+          "package_name": "com.fss.rttv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594844793507-8ed38bpjvhc5amblsl7q7vu7chqmjct7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNRF85mGzddelNfvuDyhLtv3nhgUdfcmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594844793507-8ed38bpjvhc5amblsl7q7vu7chqmjct7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

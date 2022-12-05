@@ -41,12 +41,13 @@ class _HomePageState extends State<HomePage> {
         .of(context)
         .size;
     return Scaffold(
+      backgroundColor: Color(0xff0D131F),
       extendBodyBehindAppBar: true,
       floatingActionButton: const FloatingActionButton(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.white,
         onPressed: null,
         hoverColor: Colors.blue,
-        child: Icon(Icons.cast,color: Colors.white,),
+        child: Icon(Icons.cast,color: Colors.red,),
       ),
       appBar: PreferredSize(
         preferredSize: Size(screenSize.width, 50.0),

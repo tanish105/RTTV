@@ -28,7 +28,7 @@ class ContentList extends StatelessWidget {
             child: Text(
               title,
               style: const TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
               ),

@@ -34,7 +34,8 @@ class _MoreScreenState extends State<MoreScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Account Settings"),backgroundColor: Colors.black,),
+      backgroundColor: Color(0xff0D131F),
+      appBar: AppBar(title: Text("Account Settings",style: TextStyle(fontSize: 28),),backgroundColor: Color(0xff0D131F),),
       body: SafeArea(
         child: CustomScrollView(
           controller: _scrollController,

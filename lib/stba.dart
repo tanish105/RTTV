@@ -19,6 +19,7 @@ class STBA extends StatelessWidget {
               child: Icon(
                 icon,
                 size: 33,
+                color: Colors.white,
               ),
             ),
           ),
@@ -32,7 +33,7 @@ class STBA extends StatelessWidget {
                   onTap: function,
                   child: Text(
                     text,
-                    style: const TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25,color: Colors.white),
                   )),
             ),
           ),

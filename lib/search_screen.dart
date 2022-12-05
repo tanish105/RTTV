@@ -20,7 +20,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xff0D131F),
       resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Padding(
@@ -30,9 +30,14 @@ class _SearchPageState extends State<SearchPage> {
               Container(
                 height: 50,
                 width: double.infinity,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                decoration: BoxDecoration(
+                  color: Color(0xff0D131F),
+                  border: Border.all(
+                    color: Colors.white,
+                    style: BorderStyle.solid,
+                    width: 3.0
+                  ),
+                  borderRadius: BorderRadius.all(Radius.circular(20),),
                 ),
                 // alignment: Alignment.centerLeft,
                 // padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
@@ -43,7 +48,7 @@ class _SearchPageState extends State<SearchPage> {
                     icon:IconButton(onPressed: () => print("Search"),
                       icon:  const Icon(
                       Icons.search,
-                      color: Colors.black,
+                      color: Colors.white,
                       size: 30,
                     ),
                       alignment: Alignment.center,
@@ -52,8 +57,7 @@ class _SearchPageState extends State<SearchPage> {
                         borderRadius: BorderRadius.all(Radius.circular(20)),
                         borderSide: BorderSide.none),
                     filled: true,
-                    fillColor: Colors.white,
-                    hintText: 'Search!!!',
+                    fillColor: Color(0xff0D131F),
                     // alignLabelWithHint: true,
                   ),
                   onChanged: (value) {

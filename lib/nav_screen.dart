@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rttv/download_screen.dart';
 import 'package:rttv/homepage.dart';
 import 'package:rttv/more_screen.dart';
 import 'package:rttv/search_screen.dart';
@@ -14,7 +15,7 @@ class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     HomePage(key: PageStorageKey('homePage'),),
     SearchPage(),
-    Scaffold(),
+    DownloadScreen(),
     MoreScreen(),
   ];
 
@@ -30,6 +31,7 @@ class _NavScreenState extends State<NavScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff0D131F),
       body: _screens[_currIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
@@ -46,6 +48,7 @@ class _NavScreenState extends State<NavScreen> {
         selectedFontSize: 11.0,
         unselectedItemColor: Colors.grey,
         unselectedFontSize: 11.0,
+        backgroundColor: Color(0xff0D131F),
         onTap: (index) => setState(() => _currIndex = index),
       ),
     );

@@ -29,6 +29,7 @@ class RTTV extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        textTheme: TextTheme(displaySmall: TextStyle(color: Colors.white),displayMedium:  TextStyle(color: Colors.white)),
         primarySwatch: Colors.brown,
         inputDecorationTheme: const InputDecorationTheme(
           filled: true,

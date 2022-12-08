@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
       ),
       appBar: PreferredSize(
         preferredSize: Size(screenSize.width, 50.0),
-        child: CustomAppBar(scrollOffset: _scrolloffset,),
+        child: CustomAppBar( _scrolloffset,),
       ),
       body: CustomScrollView(
         controller: _scrollController,

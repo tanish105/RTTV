@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rttv/download_screen.dart';
 import 'package:rttv/homepage.dart';
 import 'package:rttv/more_screen.dart';
+import 'package:rttv/region_screen.dart';
 import 'package:rttv/search_screen.dart';
 
 class NavScreen extends StatefulWidget {
@@ -15,6 +16,7 @@ class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     HomePage(key: PageStorageKey('homePage'),),
     SearchPage(),
+    Region(),
     DownloadScreen(),
     MoreScreen(),
   ];
@@ -22,6 +24,7 @@ class _NavScreenState extends State<NavScreen> {
   final Map<String, IconData> _icons = const {
     'Home': Icons.home,
     'Search': Icons.search,
+    'Region' : Icons.view_compact,
     'Downloads': Icons.file_download,
     'More': Icons.menu,
   };

@@ -3,14 +3,16 @@ import 'package:rttv/videoscreenbutton.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class VideoScreen extends StatefulWidget {
-  const VideoScreen(this.videoId,this.title,this.description, {super.key});
-  final String videoId;
-  final String title;
-  final String description;
+  const VideoScreen(this._videoId,this._title,this._description, {super.key});
+  final String _videoId;
+  final String _title;
+  final String _description;
 
   @override
-  State<VideoScreen> createState() => _VideoScreenState(videoId,title,description);
+  State<VideoScreen> createState() => _VideoScreenState(_videoId,_title,_description);
 }
+
+
 
 class _VideoScreenState extends State<VideoScreen> {
   final String videoId;
@@ -33,11 +35,11 @@ class _VideoScreenState extends State<VideoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff0D131F),
       body: SafeArea(
-        child: Column(
-          children: [
-            Expanded(
-              flex: 3,
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
               child: YoutubePlayer(
                 controller: _controller,
                 width: double.infinity,
@@ -45,7 +47,10 @@ class _VideoScreenState extends State<VideoScreen> {
                     backgroundColor: Colors.red, playedColor: Colors.white),
               ),
             ),
-            Expanded(
+            SliverToBoxAdapter(
+              child: SizedBox(height: 20,),
+            ),
+            SliverToBoxAdapter(
               child: Container(
                 child: Row(
                   children: [
@@ -67,39 +72,47 @@ class _VideoScreenState extends State<VideoScreen> {
                 ),
               ),
             ),
-            Expanded(
+            SliverToBoxAdapter(
+              child: SizedBox(height: 60,),
+            ),
+            SliverToBoxAdapter(
                 child: Container(
               alignment: Alignment.centerLeft,
               child: Text(
                 title,
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold,color: Colors.white),
               ),
               padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
             )),
-            Expanded(
+            SliverToBoxAdapter(
+              child: SizedBox(height: 40,),
+            ),
+              SliverToBoxAdapter(
               child: Container(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   "Description",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.white),
                 ),
                 padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
               ),
             ),
-            Expanded(
+            SliverToBoxAdapter(
+              child: SizedBox(height: 15,),
+            ),
+            SliverToBoxAdapter(
               child: Container(
                 alignment: Alignment.centerLeft,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.vertical,
                   child: Text(
                     description,
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20,color: Colors.white),
                   ),
                 ),
                 padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
               ),
             ),
-            Expanded(flex:3,child: Container(),)
           ],
         ),
       ),

@@ -16,13 +16,13 @@ class VideoScreenButton extends StatelessWidget {
       icon: Column(
         children: [
           Expanded(
-            child: Icon(ic),
+            child: Icon(ic,color: Colors.white,),
           ),
           SizedBox(
             height: 10,
           ),
           Expanded(
-            child: Text(name),
+            child: Text(name, style: TextStyle(color: Colors.white),),
           ),
         ],
       ),

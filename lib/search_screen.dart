@@ -10,11 +10,22 @@ class SearchPage extends StatefulWidget {
 
 class _SearchPageState extends State<SearchPage> {
   TextEditingController _searchController = TextEditingController();
+  ScrollController _scrollController = ScrollController();
+
+  void initState() {
+    // TODO: implement initState
+    _scrollController = (ScrollController()..addListener(() {
+      setState(() {
+      });
+    })) ;
+    super.initState();
+  }
 
   @override
   void dispose() {
     super.dispose();
     _searchController.dispose();
+    _scrollController.dispose();
   }
 
   @override
@@ -42,10 +53,11 @@ class _SearchPageState extends State<SearchPage> {
                 // alignment: Alignment.centerLeft,
                 // padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: TextField(
-                  style: const TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20,color: Colors.white),
                   textAlignVertical: TextAlignVertical.center,
                   decoration: InputDecoration(
                     icon:IconButton(onPressed: () => print("Search"),
+                      style: ButtonStyle(),
                       icon:  const Icon(
                       Icons.search,
                       color: Colors.white,

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:rttv/region_screen.dart';
 
 class CustomAppBar extends StatelessWidget {
   final double scrollOffset;
-  const CustomAppBar({Key? key, this.scrollOffset=0.0}) : super(key: key);
+  const CustomAppBar(double scrolloffset, {Key? key, this.scrollOffset=0.0}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +21,10 @@ class CustomAppBar extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  _appbarbutton( onTap: () => print('TV Shows'), title: 'TV SHOWS',),
-                  _appbarbutton( onTap: () => print('movies'), title: 'MOVIES',),
-                  _appbarbutton( onTap: () => print('region'), title: 'REGION',),
+                  // _appbarbutton( onPress: () => print('TV Shows'), title: 'TV SHOWS',),
+                  // _appbarbutton( onPress: () => print('movies'), title: 'MOVIES',),
+                  // _appbarbutton( onPress: () {
+                  // }, title: 'REGION',),
                 ],
               ),
             )
@@ -35,17 +37,17 @@ class CustomAppBar extends StatelessWidget {
 
 class _appbarbutton extends StatelessWidget {
   final String title;
-  final Function onTap;
+  final Function onPress;
 
   const _appbarbutton({
     required this.title,
-    required this.onTap,
+    required this.onPress,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap (),
+      onTap: onPress (),
       child: Text(title,
       style: TextStyle(
       color: Colors.white,

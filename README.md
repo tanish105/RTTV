@@ -1,16 +1,10 @@
 # RTTV - Regional and Traditional Television
 
-A Flutter project made by Full Stack Squad 
+A Flutter project made by Full Stack Squad. RTTV is an OTT application which focuses more on regional content like nukad natak, regional drama, movies etc. 
+This platforms aims to provide equal opportunity for each and evry regional content. 
 
-## Getting Started
+## RTTV Application
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+We had made our application on Flutter framework so that we can launuch our concept across all devices as well as platform. 
+Currently it is in developing stage in which we had desgined the Android application of RTTV. 
+In the near future our team had planned for providing support for Web as well as IOS.

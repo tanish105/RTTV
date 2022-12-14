@@ -1,6 +1,6 @@
-# rttv
+# RTTV - Regional and Traditional Television
 
-A new Flutter project.
+A Flutter project made by Full Stack Squad 
 
 ## Getting Started
 

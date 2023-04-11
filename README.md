@@ -2,7 +2,7 @@
 
 * A Flutter project made by Full Stack Squad. RTTV is an OTT application which focuses more on regional content like nukad natak, regional drama, movies etc.
 
-* This platforms aims to provide equal opportunity for each and evry regional content. 
+* This platforms aims to provide equal opportunity for each and every regional content. 
 
 ## RTTV Application
 
